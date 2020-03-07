@@ -40,7 +40,7 @@ public class PlayerScript : MonoBehaviour
     {
         if(collision.collider.tag == "Coin")
         {
-            scoreValue += 1;
+            scoreValue = scoreValue + 1;
             score.text = scoreValue.ToString();
             Destroy(collision.collider.gameObject);
         }
